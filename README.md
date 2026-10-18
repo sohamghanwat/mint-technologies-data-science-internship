@@ -15,7 +15,8 @@ data-science-internship/
 ├── notebooks/
 │   ├── 01_exploration_cleaning.ipynb
 │   ├── 02_feature_engineering.ipynb
-│   └── 03_baseline_model.ipynb
+│   ├── 03_baseline_model.ipynb
+│   └── 04_advanced_models.ipynb
 └── README.md
 ```
 
@@ -46,6 +47,16 @@ What the notebook does:
 - Checks the model with MSE, RMSE and R2 on the test set.
 - Compares the model with just guessing the average price and explains if the baseline is good.
 
+## Milestone 4: Model Comparison
+In this milestone, I try stronger models and compare them with the baseline.
+
+What the notebook does:
+- Trains Random Forest and Gradient Boosting models.
+- Tunes both with `GridSearchCV`.
+- Shows a comparison table with the train score, test score and best settings of each model.
+- Checks the gap between train and test scores to look for overfitting.
+- Gives a written conclusion on the best model.
+
 ## How to Run
 1. Install the libraries:
    `pip install pandas numpy matplotlib seaborn jupyter`
@@ -57,6 +68,7 @@ What the notebook does:
    `pip install scikit-learn`
 6. Open `notebooks/02_feature_engineering.ipynb` and run all cells. This creates `data/engineered_data.csv`.
 7. Open `notebooks/03_baseline_model.ipynb` and run all cells.
+8. Open `notebooks/04_advanced_models.ipynb` and run all cells. This one can take a few minutes because of the grid search.
 
 ## Tools Used
 Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, Jupyter Notebook
